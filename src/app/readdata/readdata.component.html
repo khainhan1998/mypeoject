@@ -1,0 +1,11 @@
+<div>
+    <input type="file" (change)="readExcel($event)" accept=".xlsx">
+    <button (click)="writingtoExcel()">Import Excel</button>
+</div>
+<table>
+    <tr *ngFor="let row of data">
+        <td *ngFor="let rl of row">
+            {{rl}}
+        </td>
+    </tr>
+</table>
